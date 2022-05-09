@@ -1,0 +1,7 @@
+.header{
+    max-height: 100vh;
+}
+.header img {
+    width: 100vw;
+    max-height: 100vh;
+}
