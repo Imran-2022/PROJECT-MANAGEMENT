@@ -17,7 +17,7 @@ const Projects = () => {
         const {id,imgUrl,project_name,title}=dt;
         return (
             <div className="project" key={id}>
-                <img src={imgUrl} alt="project-img" />
+                <img width="100%" height="250px" src={imgUrl} alt="project-img" />
                 <div className="project-details">
                     <p>Project : {project_name}</p>
                     <p>Title : {title}</p>

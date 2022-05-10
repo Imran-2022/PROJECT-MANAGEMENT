@@ -7,7 +7,7 @@ import ReactPlayer from 'react-player'
 const SingleProject = () => {
     const { abc } = useParams()
     const [singleProject, setSingleProject] = useState(...JsonData.filter(x => x.id === abc));
-    const { id, description, imgUrl, project_name, title, frontEnd, BackEnd, deployment,videoUrl } = singleProject;
+    const { id, description, imgUrl, project_name, title, frontEnd, BackEnd, deployment, videoUrl } = singleProject;
     useEffect(() => {
         // move to top of page while click on link react js
         window.scrollTo(0, 0)
@@ -17,8 +17,11 @@ const SingleProject = () => {
             <Link to="/" className="back-btn">Back to Home</Link>
             <div className="single-Project" key={id}>
                 {/* <iframe className="single-project-image"  src={videoUrl} title="video"></iframe> */}
-                <ReactPlayer light={imgUrl}  className="single-project-image" playing={true} controls={true} loop={false} url={videoUrl} />
+                <ReactPlayer light={imgUrl} className="single-project-image" playing={true} controls={true} loop={false} url={videoUrl} />
                 <div className="project-details">
+                    <div className='video-text'>
+                        <p>Play the above video to see the details 🚀</p>
+                    </div>
                     <h3>Project</h3>
                     <p>{project_name}</p>
                     <h3>Title </h3>
