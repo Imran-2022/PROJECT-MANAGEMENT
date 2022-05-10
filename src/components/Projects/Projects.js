@@ -23,11 +23,8 @@ const Projects = () => {
                     <p>Project : {project_name.slice(0,20)}</p>
                     <p>Title : {title.slice(0,60)}</p>
                     <p>description : {description.slice(0,100)}</p>
-                    <button className="project-btn"> <Link className="link" to={`/projects/${id}`}>Details here</Link></button>
-                   {/* <div className="project-btn">
-                   <button className="btn">Details</button>
-                   <button className="btn">Details</button>
-                   </div> */}
+                     <Link className="link" to={`/projects/${id}`}><button className="project-btn">Details here</button></Link>
+                   
                 </div>
             </div>
         )
