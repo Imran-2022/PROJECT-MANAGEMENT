@@ -33,3 +33,8 @@
 img{
     max-width: 100%;
 }
+
+.link{
+  color: inherit;
+  text-decoration: inherit;
+}
