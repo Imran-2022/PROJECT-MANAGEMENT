@@ -1,4 +1,4 @@
-.details-btn{
+.details-btn {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(30%, 1fr));
     gap: 20px;
@@ -6,7 +6,7 @@
     margin-top: 10px;
 }
 
-.single-Project{
+.single-Project {
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     width: 80%;
     margin: 30px auto;
@@ -14,17 +14,51 @@
     justify-content: center;
     flex-direction: column;
 }
-.single-Project img{
+
+.single-Project img {
     width: 100%;
-    height:70vh !important;
+    height: 80vh !important;
 }
-.back-btn{
+
+.back-btn {
     margin-left: 30px;
     margin-top: 20px;
-
-
 }
-.single-Project p {
-    padding: 10px 0px;
-    margin: 10px 0px;
+
+.single-Project p,
+h3,
+h4 {
+    padding: 5px 0px;
+    margin: 5px 0px;
+}
+.single-Project h4{
+    font-size: 16x;
+    font-weight: 600;
+}
+.single-Project h3 {
+    text-align: center;
+    padding: 2px 10px;
+    background: rgba(0, 0, 0, 0.164);
+    /* width fit-content. */
+    width: fit-content;
+    block-size: fit-content;
+    border-radius: 2px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    font-size: 16px;
+    font-weight: 500;
+}
+.fronend, .backend, .deployment{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.fronend p, .backend p, .deployment p{
+    padding: 5px 10px;
+    color: aqua;
+    letter-spacing: 1.5px;
+    background: #0035abc2;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+    border-radius: 3px;
+    font-size: 16px;
+    font-weight: 500;
 }

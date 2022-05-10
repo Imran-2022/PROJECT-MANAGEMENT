@@ -1,8 +1,7 @@
 .header{
-    min-height: 50vh;
+    min-height: 70vh;
     width: 100%;
-    /* background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(https://ict-innovation-fest-2021.mist.ac.bd/assets/img/project.jpeg); */
-    background: #232f3e;
+    background-image: linear-gradient(rgb(4 9 30 / 90%),rgb(4 9 30)),url(https://ict-innovation-fest-2021.mist.ac.bd/assets/img/project.jpeg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;

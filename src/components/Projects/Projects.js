@@ -14,15 +14,13 @@ const Projects = () => {
     const displayProjects = filterProject
     .slice(pagesVisited, pagesVisited + usersPerPage)
     .map((dt) =>{
-        const {id,description,imgUrl,project_name,title}=dt;
-        console.log(id,description,imgUrl,project_name,title);
+        const {id,imgUrl,project_name,title}=dt;
         return (
             <div className="project" key={id}>
                 <img src={imgUrl} alt="project-img" />
                 <div className="project-details">
-                    <p>Project : {project_name.slice(0,20)}</p>
-                    <p>Title : {title.slice(0,60)}</p>
-                    <p>description : {description.slice(0,100)}</p>
+                    <p>Project : {project_name}</p>
+                    <p>Title : {title}</p>
                      <Link className="link" to={`/projects/${id}`}><button className="project-btn">Details here</button></Link>
                    
                 </div>
