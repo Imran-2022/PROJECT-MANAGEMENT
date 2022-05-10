@@ -15,8 +15,8 @@
     flex-direction: column;
 }
 
-.single-Project img {
-    width: 100%;
+.single-project-image {
+    width: 100% !important;
     height: 80vh !important;
 }
 
