@@ -1,7 +1,7 @@
 /* projects  */
 .projects {
     max-width: 80%;
-    min-height: 100vh;
+    min-height: 80vh;
     margin: auto;
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
@@ -9,7 +9,7 @@
     grid-gap: 1rem;
     justify-content: center;
     align-content: center;
-    padding: 40px;
+    padding: 50px 0px;
 }
 
 .project {
@@ -126,12 +126,46 @@
     }
 }
 
-/* .project-btn{
+
+/* pagination */
+
+.App-pagination{
+    margin-bottom: 20px;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: center;
+    align-items: center;
 }
-.btn{
-    width: 150px;
-} */
-/* single Projects */
+  
+  .paginationBttns {
+    width: 80%;
+    height: 40px;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .paginationBttns a {
+    padding: 10px;
+    margin: 8px;
+    border-radius: 20px;
+    border: 1px solid #2b2eff;
+    color: #2b2eff;
+    cursor: pointer;
+  }
+  
+
+  
+  .paginationActive a {
+    color: white;
+    background-color: #2b2eff;
+  }
+  
+  .paginationDisabled a {
+    color: grey;
+    display: none;
+  }
+.nextBttn, .previousBttn{
+    outline: none !important;
+    border: none !important;
+    font-size: 20px;
+}
