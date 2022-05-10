@@ -1,7 +1,9 @@
 .details-btn{
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(30%, 1fr));
     gap: 20px;
+    justify-content: space-between;
+    margin-top: 10px;
 }
 
 .single-Project{
@@ -21,4 +23,8 @@
     margin-top: 20px;
 
 
+}
+.single-Project p {
+    padding: 10px 0px;
+    margin: 10px 0px;
 }
